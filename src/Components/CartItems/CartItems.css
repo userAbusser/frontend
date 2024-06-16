@@ -1,0 +1,134 @@
+.cart-container {
+    margin: 100px 170px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    color: #100450;
+}
+
+.cart-container hr {
+    height: 3px;
+    background: #100450;
+    border: 0;
+}
+
+.cart-header {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+    padding: 20px 0px;
+    color: #100450;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.cart-item {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.cart-item-image {
+    height: 61px;
+}
+
+.cart-remove-icon {
+    width: 15px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.cart-quantity {
+    width: 64px;
+    height: 50px;
+    border: 2px solid #2c2828;
+    background: white;
+}
+
+.cart-summary {
+    display: flex;
+    margin: 100px 0px;
+}
+
+.cart-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    gap: 40px;
+}
+
+.cart-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.cart-total button {
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #081c38;
+    color: white;
+    font-size: 16px;
+    font-weight: 600px;
+    cursor: pointer;
+}
+
+@media(max-width:1280px) {
+    .cart-container {
+        margin: 58px 48px;
+    }
+
+    .cart-header {
+        grid-template-columns: 0.5fr 3fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 19px;
+        padding: 14px 0px;
+        font-size: 14px;
+    }
+
+    .cart-item-image {
+        height: 49px;
+    }
+
+    .cart-remove-icon {
+        margin: auto;
+    }
+
+    .cart-quantity {
+        width: 40px;
+        height: 30px;
+    }
+
+    .cart-summary {
+        margin: 78px 0px;
+        flex-direction: column;
+        gap: 78px;
+    }
+
+    .cart-total {
+        margin: 0;
+    }
+
+    .cart-total button {
+        max-width: 199px;
+        height: 43px;
+        font-size: 11px;
+    }
+}
+
+@media(max-width: 500px) {
+    .cart-header {
+        display: none;
+        grid-template-columns: 0.5fr 3fr 0.5fr;
+        gap: 8px;
+    }
+
+    .cart-item {
+        display: grid;
+    }
+}

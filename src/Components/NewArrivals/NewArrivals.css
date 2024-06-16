@@ -1,0 +1,103 @@
+.newarrivals{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+  color: #2b10a2;
+
+}
+
+.newarrivals h1{
+    color: #130650;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 58px;
+
+}
+
+.newarrivals hr{
+width: 200px;
+height: 6px;
+border-radius: 10px;
+background: #130650;
+}
+
+.arrivals{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 50px;
+    gap: 30px;
+    cursor: pointer;
+}
+
+@media(max-width:1280px){
+    .new-arrivals{
+        height: 70vh;
+
+    }
+
+    .new-arrivals h1{
+        font-size: 44px;
+    }
+     .new-arrivals hr{
+        width: 160px;
+        height: 4px;
+     }
+
+     .arrivals{
+        gap: 19px;
+        margin-top: 29px;
+     }
+}
+
+@media(max-width:1024px){
+   
+
+    .new-arrivals h1{
+        font-size: 34px;
+    }
+     .new-arrivals hr{
+        width: 119px;
+        height: 4px;
+     }
+
+     .arrivals{
+        gap: 14px;
+        margin-top: 19px;
+     }
+}
+
+@media(max-width:800px){
+    .new-arrivals{
+       
+        gap: 5px;
+
+    }
+
+    .new-arrivals h1{
+        font-size: 24px;
+    }
+     .new-arrivals hr{
+        width: 100px;
+        
+     }
+
+     .arrivals{
+        gap: 5px;
+        
+     }
+}
+
+@media(max-width:500px){
+    
+
+    .arrivals{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 19px;
+    }
+}

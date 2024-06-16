@@ -1,0 +1,137 @@
+.product-container {
+  display: flex;
+  margin: 0px 170px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.product-left {
+  display: flex;
+  gap: 17px;
+}
+.product-main-img {
+  width: 586px;
+  height: 700px;
+}
+
+.product-right {
+  margin: 0px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  color: #130650;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.product-stars {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  gap: 5px;
+  color: #1c1c1c;
+  font-size: 16px;
+}
+
+.product-prices {
+  display: flex;
+  margin: 40px 0px;
+  gap: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.product-price-old {
+  color: #818181;
+  text-decoration: line-through;
+}
+
+.product-price-new {
+  color: #081f2f;
+}
+
+.product-memory-title h1 {
+  margin-top: 55px;
+  color: #656565;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product-memories {
+  display: flex;
+  margin: 30px 0px;
+  gap: 20px;
+}
+
+.memory-option {
+  padding: 18px 24px;
+  background: #fbfbfb;
+  border: 1 solid #ebebeb;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.add-to-cart-button {
+  padding: 20px 40px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: #081f2f;
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.product-description {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media(max-width:1280px) {
+  .product-container {
+    margin: 0px 60px;
+  }
+
+  .product-left {
+    gap: 10px;
+  }
+
+  .product-main-img {
+    width: auto;
+    height: 510px;
+  }
+
+  .product-right {
+    margin: 0px 30px;
+  }
+
+  .product-title {
+    font-size: 22px;
+  }
+
+  .product-stars {
+    gap: 3px;
+    font-size: 13px;
+  }
+
+  .product-prices {
+    margin: 10px 0px;
+  }
+}
+
+@media(max-width:500px) {
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product-main-img {
+    width: auto;
+    height: 510px;
+  }
+}
